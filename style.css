@@ -1,0 +1,361 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Montserrat, sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    align-items: center;
+    height: 50px;
+    display: block;
+    position: fixed;
+    text-align: center;
+    z-index: 9999;
+}
+
+
+#logo1 {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    cursor: pointer;
+    top: 23px;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    display: block;
+
+}
+
+nav ul {
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    display: flex;
+
+}
+
+nav a {
+    color: #789;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+nav li {
+    display: flex;
+    padding: 20px 12px 15px;
+    /* justify-content: space-between; */
+}
+
+#blue {
+    font-size: 15px;
+
+}
+
+.megamenu {
+    position: absolute;
+    box-shadow: 0px 1px 1px 2px lightblue;
+    top: 40px;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: 0px;
+    display: flex;
+}
+
+li:hover .megamenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.megamenuitems ul {
+    flex-direction: column;
+    font-size: 10px;
+    color: #789;
+    margin-top: 30px;
+    padding: 0px 60px 20px 15px;
+    font-weight: bold;
+}
+
+#third-list {
+    padding-left: 30px;
+    padding-bottom: 300px;
+
+}
+
+.megamenuitems {
+
+    text-align: left;
+    display: flex;
+
+}
+
+.megamenuitems li:hover {
+    font-size: 10px;
+    background-color: aquamarine;
+
+
+}
+
+.menu-heading {
+    font-size: large;
+}
+
+.left-links {
+    margin-left: 170px;
+    display: flex;
+
+}
+
+.right-links {
+    margin-right: 170px;
+    display: flex;
+}
+
+.hamburger {
+    font-size: 25px;
+    display: none;
+
+}
+
+.studysection {
+    width: 100%;
+    height: 800px;
+    background-color: #f7f7f7;
+}
+
+.boystudy {
+
+    height: 280px;
+    width: 510px;
+    border: 2px solid;
+    background-color: black;
+    border-radius: 4px;
+    position: absolute;
+    margin-left: 190px;
+    top: 290px;
+    padding: 25px 20px 0px 50px;
+    z-index: 1;
+
+}
+
+
+.studyimage {
+    width: 972px;
+    height: 548px;
+    margin-left: 368px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.signature-section small,
+span {
+    color: #fff;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+}
+
+.signature-section span {
+    margin-left: 240px;
+    transform: rotate(-7deg);
+    display: inline-block;
+    font-size: 22px;
+    padding-top: 30px;
+
+}
+
+.boystudy p {
+    color: #fff;
+    padding-top: 30px;
+}
+
+.transition-text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+    font-size: 45px;
+}
+
+.transition-text.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.computer {
+    width: 585px;
+    margin-top: 100px;
+    margin-left: 190px;
+
+}
+
+.service-section {
+    width: 100%;
+    display: flex;
+}
+
+.video-section {
+    box-shadow: 1px 1px 0.1px 0.1px skyblue;
+    width: 565px;
+    height: 240px;
+    margin-top: 100px;
+    padding-top: 90px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.videoicon {
+    font-size: 50px;
+    cursor: pointer;
+
+}
+
+.ourservice {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.piechart {
+    width: 60px;
+    height: 60px;
+}
+
+.console {
+    width: 60px;
+    height: 60px;
+
+}
+
+.round {
+    width: 60px;
+    height: 60px;
+}
+
+.clock {
+    width: 60px;
+    height: 60px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 40px;
+
+}
+
+.service p {
+    font-size: 16px;
+
+    font-weight: 50;
+}
+
+.showdata {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width:990px) {
+    nav {
+        position: absolute;
+        top: 50px;
+        padding-top: 30px;
+        background-color: greenyellow;
+        flex-direction: column;
+        width: 100%;
+        height: 460px;
+        gap: 10px;
+        display: flex;
+        float: left;
+        margin-left: 0px;
+        display: none;
+
+    }
+
+    nav ul {
+        flex: 1;
+        flex-direction: column;
+
+    }
+
+    .left-links {
+
+        margin-left: 0;
+        flex-direction: column;
+        flex: 1;
+        outline: none;
+        display: flex;
+    }
+
+    .right-links {
+
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        margin-right: 0;
+
+    }
+
+
+
+    .hamburger {
+        display: block;
+        font-size: 25px;
+        margin-right: 20px;
+        cursor: pointer;
+        float: right;
+        padding-top: 12px;
+
+    }
+
+    .megamenuitems ul {
+        flex-direction: column;
+        font-size: 10px;
+        color: #789;
+        margin-top: 30px;
+        padding: 0px 60px 0px 15px;
+        font-weight: bold;
+
+
+    }
+
+    .megamenu {
+        position: absolute;
+        box-shadow: 0px 1px 1px 2px lightblue;
+        top: 40px;
+        visibility: hidden;
+        opacity: 0;
+
+
+    }
+
+    .megamenuitems {
+
+        text-align: left;
+        display: flex;
+
+    }
+
+
+
+
+
+
+}
+
+;
